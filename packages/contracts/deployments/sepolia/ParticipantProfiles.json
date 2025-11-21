@@ -1,0 +1,51 @@
+{
+  "address": "0xd036355455b15c5c8dca344d2fbe813dc0dd7c90",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "participant", "type": "address" },
+        { "indexed": false, "internalType": "string", "name": "uri", "type": "string" },
+        { "indexed": false, "internalType": "uint64", "name": "updatedAt", "type": "uint64" }
+      ],
+      "name": "ProfileUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "participant", "type": "address" }],
+      "name": "getProfile",
+      "outputs": [
+        { "internalType": "string", "name": "uri", "type": "string" },
+        { "internalType": "uint64", "name": "updatedAt", "type": "uint64" },
+        { "internalType": "bool", "name": "exists", "type": "bool" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "string", "name": "uri", "type": "string" }],
+      "name": "setMyProfile",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xcd74e7c3c401544c45805ec3928d95a8d62a938e0a96d7c7ffd9d91a13e1699d",
+  "receipt": {
+    "to": null,
+    "from": "0xd78c12137087d394c0fa49634caa80d0a1985a8a",
+    "contractAddress": "0xd036355455b15c5c8dca344d2fbe813dc0dd7c90",
+    "transactionIndex": 69,
+    "gasUsed": "0x554b0",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x0d25ba19aecf0f2022e2f959dadedddc1bcd8153a2fda4d9eecb38bc64a8fc7d",
+    "transactionHash": "0xcd74e7c3c401544c45805ec3928d95a8d62a938e0a96d7c7ffd9d91a13e1699d",
+    "logs": [],
+    "blockNumber": 9675475,
+    "cumulativeGasUsed": "0x9eb0e8",
+    "effectiveGasPrice": "0xf4254",
+    "status": 1,
+    "type": "0x2"
+  },
+  "args": []
+}
