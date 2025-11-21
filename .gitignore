@@ -8,3 +8,6 @@ packages/contracts/typechain-types
 packages/contracts/.env.hardhat.local
 apps/dao-dapp/src/contracts/*
 !apps/dao-dapp/src/contracts/.gitkeep
+!apps/dao-dapp/src/contracts/participantProfiles.ts
+!apps/dao-dapp/src/contracts/deployments/
+!apps/dao-dapp/src/contracts/deployments/**
