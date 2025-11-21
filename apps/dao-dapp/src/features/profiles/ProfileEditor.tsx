@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useAccount } from 'wagmi'
 import { useSetMyProfile } from './hooks'
-import { ProfileDocument, toGatewayUri } from './utils'
+import { toGatewayUri, type ProfileDocument } from './utils'
 
 interface LinkInput {
   key: string

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useAccount } from 'wagmi'
 import { useParticipantProfile } from './hooks'
-import { ProfileDocument, toGatewayUri } from './utils'
+import { toGatewayUri, type ProfileDocument } from './utils'
 
 interface ProfileViewProps {
   address?: `0x${string}`
@@ -28,12 +28,13 @@ export function ProfileView({ address }: ProfileViewProps) {
     setJsonError(null)
 
     if (!profileUri || !exists) return
+    const currentUri = profileUri
     let cancelled = false
 
     async function load() {
       setIsFetchingJson(true)
       try {
-        const url = toGatewayUri(profileUri)
+        const url = toGatewayUri(currentUri)
         const res = await fetch(url)
         if (!res.ok) throw new Error(`Failed to fetch profile JSON (${res.status})`)
         const json = await res.json()
